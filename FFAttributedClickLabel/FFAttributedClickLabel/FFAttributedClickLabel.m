@@ -73,7 +73,6 @@
               if ([self.delegate respondsToSelector:@selector(FFAttrbutedLabel:click:)]) {
                   [self.delegate FFAttrbutedLabel:self click:model];
               }
-
             }];
 }
 
@@ -89,17 +88,17 @@
     [super setAttributedText:str];
 }
 
+//因为 要判断事件的捕获 暂时这样设计
+
 - (BOOL)getClickFrame:(CGPoint)point resultBlock:(void (^)(BOOL isSucceec, FFAttributedClickItem *model))Block {
     CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)self.attributedText);
 
     CGMutablePathRef Path = CGPathCreateMutable();
 
-    //坐标点在左下角
     CGPathAddRect(Path, NULL, self.bounds);
 
     CTFrameRef frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), Path, NULL);
 
-    //得到frame中的行数组
     CFArrayRef lines = CTFrameGetLines(frame);
 
     CFIndex count = CFArrayGetCount(lines);
@@ -149,6 +148,7 @@
     return NO;
 }
 
+//是高亮的字体捕获  不是就放弃捕获事件
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     if ([self getClickFrame:point
                 resultBlock:^(BOOL isSucceec, FFAttributedClickItem *model){
