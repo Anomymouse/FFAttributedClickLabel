@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0FC58EB65007D50DB89734E21C4B53AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		502F7EF41CE9E48000974FD7 /* FFAttributedClickLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 502F7EF21CE9E48000974FD7 /* FFAttributedClickLabel.h */; };
+		502F7EF51CE9E48000974FD7 /* FFAttributedClickLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 502F7EF31CE9E48000974FD7 /* FFAttributedClickLabel.m */; };
 		5D7B3CA9C8300477BC8F365EAB22DD1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		72C60BAC690FF4514F66D728690C9D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		756A896079DB9F19768C4C1AEC9FBE9F /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ED1BE6955CE39135E3415864A431EA /* ReplaceMe.m */; };
 		9016EA64E5E33082B56B4F7D38F6624E /* Pods-FFAttributedClickLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B850839AF2D1EA07BEAEAC24EA6351E /* Pods-FFAttributedClickLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADE760B4D8D653B58A90785506497C02 /* Pods-FFAttributedClickLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 336246FC65F350088D2DA0F527A6E8D0 /* Pods-FFAttributedClickLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE115CF28B8C79E38CA1828EAF95A251 /* Pods-FFAttributedClickLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9786418FD1BE1EE3FFADBD6778931479 /* Pods-FFAttributedClickLabel_Example-dummy.m */; };
@@ -40,6 +41,8 @@
 		336246FC65F350088D2DA0F527A6E8D0 /* Pods-FFAttributedClickLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FFAttributedClickLabel_Example-umbrella.h"; sourceTree = "<group>"; };
 		36D7A5E44009799E52A02934AE7F685A /* Pods_FFAttributedClickLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAttributedClickLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2386FFF66D388B7693BFE053EBB2C0 /* Pods_FFAttributedClickLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAttributedClickLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		502F7EF21CE9E48000974FD7 /* FFAttributedClickLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAttributedClickLabel.h; sourceTree = "<group>"; };
+		502F7EF31CE9E48000974FD7 /* FFAttributedClickLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAttributedClickLabel.m; sourceTree = "<group>"; };
 		66F209EBA149B7B94F485E16A549A9C3 /* Pods-FFAttributedClickLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FFAttributedClickLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6D95CE7889896188D9F584FC1DE86721 /* FFAttributedClickLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FFAttributedClickLabel.xcconfig; sourceTree = "<group>"; };
 		71CF282F144BE23850DE69170E8A72B2 /* FFAttributedClickLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FFAttributedClickLabel.modulemap; sourceTree = "<group>"; };
@@ -60,7 +63,6 @@
 		E09149B112965FEFAEED4EDD32202C80 /* FFAttributedClickLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FFAttributedClickLabel-umbrella.h"; sourceTree = "<group>"; };
 		E214696F41ADA9BED876A91DEBBD8306 /* Pods-FFAttributedClickLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FFAttributedClickLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EFDD11A8ABE030E5B36B2538F277C079 /* FFAttributedClickLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FFAttributedClickLabel-prefix.pch"; sourceTree = "<group>"; };
-		F3ED1BE6955CE39135E3415864A431EA /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		F7C0E0ED6EDB8BD270DCC04FB0EBD00B /* Pods-FFAttributedClickLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FFAttributedClickLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,7 +201,8 @@
 		CB679412608A3FE46F1016AC5C2EE1A7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F3ED1BE6955CE39135E3415864A431EA /* ReplaceMe.m */,
+				502F7EF21CE9E48000974FD7 /* FFAttributedClickLabel.h */,
+				502F7EF31CE9E48000974FD7 /* FFAttributedClickLabel.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502F7EF41CE9E48000974FD7 /* FFAttributedClickLabel.h in Headers */,
 				C370A78B14A7B31387125DE9F136B8D6 /* FFAttributedClickLabel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,8 +341,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502F7EF51CE9E48000974FD7 /* FFAttributedClickLabel.m in Sources */,
 				B38A070929413330C2E9B51D64AA45CD /* FFAttributedClickLabel-dummy.m in Sources */,
-				756A896079DB9F19768C4C1AEC9FBE9F /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
