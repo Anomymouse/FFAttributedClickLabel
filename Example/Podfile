@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FFAttributedClickLabel_Example' do
+  pod 'FFAttributedClickLabel', :path => '../'
+
+  target 'FFAttributedClickLabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
