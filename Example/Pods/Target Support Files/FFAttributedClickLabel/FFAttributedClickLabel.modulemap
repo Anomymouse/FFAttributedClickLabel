@@ -1,6 +1,0 @@
-framework module FFAttributedClickLabel {
-  umbrella header "FFAttributedClickLabel-umbrella.h"
-
-  export *
-  module * { export * }
-}
